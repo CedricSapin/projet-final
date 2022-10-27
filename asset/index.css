@@ -1,0 +1,107 @@
+/* NAV BARRE */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#button {
+    display: flex;
+    justify-content: left;
+    height: 35px;
+    justify-content: space-around;
+
+}
+
+.right_align {
+    height: 25px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #25b97e;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 5px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+input {
+    height: 25px;
+    width: 200px;
+    background-color: rgba(199, 199, 199, 0.916);
+}
+
+#LOGO>img {
+    width: 75%;
+    align-items: center;
+}
+
+#LOGO {
+    padding: 1%;
+    padding-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    background-color: #b4b4b450;
+    width: 50%;
+}
+
+header {
+    background: rgb(47, 113, 102);
+}
+
+#header_unconnect {
+    display: grid;
+    grid-template-columns: 20% 35% 60%;
+
+}
+
+#connectLabel {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 19% 10% 18% 15% 20%;
+
+
+}
+
+.bt_style {
+    color: white;
+    background-color: #25b97e;
+    font-weight: bold;
+    border-color: rgb(199, 199, 199);
+    border-radius: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#col3 {
+    align-self: center;
+    text-align: center;
+
+}
+
+
+
+#deposit_annonce {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#logo_plus>img {
+    height: 20px;
+}
+
+#bt_deposit_annonce {
+    width: 70%;
+    height: 50%;
+    color: white;
+    background-color: #25b97e;
+    font-weight: bold;
+    border-color: rgb(199, 199, 199);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* CONTENUE PAGE */
