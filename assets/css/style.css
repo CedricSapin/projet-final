@@ -1,0 +1,72 @@
+#colorNav {
+    /* Bg de la nav */
+    background-color: #15134f;
+}
+
+#imgNavBar {
+    width: 12vh;
+}
+
+#iconDepositAnnonce {
+
+    justify-content: center;
+}
+
+#listNav {
+    justify-content: space-between;
+    width: 100%;
+}
+
+#listeOne {
+    text-align: center;
+}
+
+#searchBarre {
+    margin-top: 3%;
+}
+
+#imageBanner {
+    width: 100%;
+    position: absolute;
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    /* on le colle en bas */
+    width: 100%;
+    height: 100px;
+    /* Hauteur du pied de page */
+    background-color: #2f2e59;
+}
+
+.iconFooter {
+    margin: 0.6vh;
+
+}
+
+#colorConnect {
+    color: #ffffff;
+}
+
+#connectBgColor {
+    background-color: #2f2e59;
+    color: rgb(255, 255, 255);
+}
+
+#modifSubscribe {
+    color: #ffffff;
+}
+
+#buttonDeposit {
+    color: darkblue;
+    background-color: #ffffff;
+}
+#navPassword {
+    /* bg de l'input */
+    background-color: rgb(202, 202, 202);
+}

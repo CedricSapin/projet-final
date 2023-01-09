@@ -1,0 +1,103 @@
+#colorNav {
+    /* Bg de la nav */
+    background-color: #15134f;
+}
+
+#imgNavBar {
+    width: 12vh;
+}
+
+.logoCenter {
+    align-items: center;
+}
+
+
+#listNav {
+    justify-content: end;
+    width: 100%;
+}
+
+#listeOne {
+    text-align: center;
+}
+
+
+
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    /* on le colle en bas */
+    width: 100%;
+    height: 100px;
+    /* Hauteur du pied de page */
+    background-color: #2f2e59;
+}
+
+.iconFooter {
+    margin: 0.6vh;
+
+}
+
+#colorConnect {
+    color: #ffffff;
+    margin-right: 6vw;
+}
+
+#connectBgColor {
+
+    background-color: #2f2e59;
+    color: rgb(255, 255, 255);
+}
+
+#navPassword {
+    /* bg de l'input */
+    background-color: rgb(202, 202, 202);
+}
+
+#subscribeForm {
+    font-size: 120%;
+    color: #15134f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.personaliseInput {
+    margin-bottom: 1vh;
+}
+
+#confirmConditions {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#confirmConditions>p {
+    margin: 0;
+}
+
+#confirmConditions>input {
+    margin-right: 1em;
+}
+
+h1 {
+    margin: 5vh 20vw 5vh 20vw;
+    color: rgb(255, 255, 255);
+    background-color: #2f2e59;
+    text-align: center;
+}
+
+#buttonSuscribe {
+    margin-top: 2%;
+    width: 10%;
+    font-size: 150%;
+    background-color: #2f2e59;
+    color: rgb(255, 255, 255);
+}

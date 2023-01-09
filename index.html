@@ -1,48 +1,214 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/pouce.png">
-    <title>Le coup d'Pouce</title>
-    <link rel="stylesheet" href="/asset/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/logopouce.png" type="image/icon type">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Le Coup d'Pouce</title>
 </head>
 
 <body>
-    <header id="navBarre">
-        <section id="header_unconnect">
-            <div id="LOGO">
-                <img src="/images/LOGO.png" alt="LOGO">
+  <!-- Barre de navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg" id="colorNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="imgNavBar" src="assets/images/LOGO.png "
+            alt="logo le coup d'pouce"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="listNav" class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item flex-grow-1" id="listeOne">
+              <a class="nav-link active" aria-current="page" href="#"><button id="buttonDeposit">Deposer une annonce</button> </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a id="colorConnect" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Connexion
+              </a>
+              <ul class="dropdown-menu m-1 end" id="connectBgColor">
+                <li class="m-1"><label for="Identifiant">Adresse mail</label><input placeholder="Adresse mail"
+                    name="Identifiant1" type="text"></li>
+                <li class="m-1"><label for="Mot de passe">Mot de passe</label><input type="password"
+                    placeholder="Mot de passe" name="Mot de passe" id="navPassword"></li>
+                <li class="m-1"><button type="submit">Connexion</button></li>
+
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link" id="modifSubscribe" href="#">Inscription</a>
+            </li>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <img src="assets/images/banniere2.jpg" class="img-fluid" id="imageBanner" alt="banniere">
+  </header>
+  <!-- barre de recherche -->
+  <section class="container" id="searchBarre">
+    <div class="row">
+      <div class="input-group rounded">
+        <input type="search" class="form-control rounded" placeholder="Recherche" aria-label="Search"
+          aria-describedby="search-addon" />
+        <a href="#"><span class="input-group-text" id="search-addon">
+            <i>Rechercher</i>
+          </span></a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <!-- Slider de profil -->
+
+        <div id="carouselExampleInterval" class="carousel slide my-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="row d-flex justify-content-around">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="assets/images/pdp femme2.jfif" class="img-fluid rounded-start rounded-3 m-1" alt="photo profil user">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="assets/images/pdp homme2.jfif" class="img-fluid rounded-start rounded-3 m-1" alt="photo profil user">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div id="deposit_annonce">
-                <button id="bt_deposit_annonce">Creer une annonce</button>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row d-flex justify-content-around">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="assets/images/pdp homm.jfif" class="img-fluid rounded-start rounded-3 m-1" alt="photo profil user">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="assets/images/pdp femme.jfif" class="img-fluid rounded-start rounded-3 m-1" alt="photo profil user">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
 
-            <div id="col3">
-                <form method="post" action="traitement.php" id="form_connect">
-                    <label id="connectLabel" for="connect"><span class="right_align">Identifiant:</span>
-                        <input name="connect" type="text" id="champ_connect" placeholder="Identifiant">
-                        <span class="right_align">Mot de passe:</span>
-                        <input type="password" name="password" placeholder="Mot de passe">
-                        <div id="button"> 
-                            <button id="bt_connect" class="bt_style">Connexion</button>
-                            <button id="bt_register" class="bt_style">Inscription</button>
-                           
-                        </div>
-            </div>
-            </label>
+        </div>
+      </div>
 
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam provident temporibus aspernatur,
+          placeat inventore eius voluptate nisi quae quas perferendis reiciendis dignissimos accusantium sunt
+          perspiciatis earum rerum, voluptatibus voluptatum reprehenderit culpa voluptatem! Dolor, deleniti? Pariatur
+          quae quaerat velit omnis ipsam nihil voluptate aliquid odio possimus suscipit inventore nesciunt vitae nobis
+          at, vel cumque excepturi, provident culpa id quasi. Explicabo blanditiis, minima provident quisquam, ipsa vero
+          culpa possimus voluptatem ad iusto cupiditate magni recusandae. Officiis sequi quasi neque vel enim
+          voluptatem? Nostrum eligendi est fugit enim repellendus natus, iusto magnam, quasi veniam minus expedita,
+          blanditiis eos labore facere itaque quas cum ducimus ratione ea corrupti optio eaque sed aliquam. Architecto
+          blanditiis at, voluptates enim ipsum quia excepturi, quidem praesentium non soluta error recusandae quaerat
+          distinctio rem tenetur earum! Assumenda error, quibusdam quia saepe et magnam natus quas perferendis harum
+          alias beatae qui impedit iusto, tempore in. Aut, sed quibusdam quae facilis suscipit modi quod quaerat autem
+          unde repellendus eligendi? Dolore suscipit laudantium, numquam, ex recusandae accusamus exercitationem natus
+          vitae repellat facilis dicta quam possimus voluptates! Quidem itaque quia aut excepturi soluta corrupti, neque
+          exercitationem expedita velit nostrum in rerum doloremque deleniti odit recusandae tempora temporibus minus
+          molestiae. Officia, sunt magnam. Quaerat sapiente saepe modi et rem eligendi! Quis rem voluptatum voluptatibus
+          maiores laudantium distinctio natus reiciendis accusamus ratione quos. Explicabo temporibus similique eaque
+          voluptas animi adipisci sit magnam maiores vel totam suscipit, esse labore provident maxime eius fuga
+          exercitationem tempore consequuntur. Repellendus dolore veritatis, id nihil voluptatum quaerat cumque labore
+          maxime soluta neque quas harum reiciendis aliquid blanditiis non enim illo fugit nobis nemo illum officiis
+          perferendis sapiente quod vel. Rerum odio optio deleniti eum quas tempora sint mollitia temporibus, repellat
+          adipisci iure est, molestiae totam nisi porro at eos consequuntur iusto quisquam. Aliquam dolorem maiores
+          illum accusamus ipsam? Autem.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <section>
+      <p>Developper par Benox Industries©</p>
+      <div>
+        <img class="iconFooter" src="assets/images/facebook.png" alt="icone facebook">
+        <img class="iconFooter" src="assets/images/instagram.png" alt="icone instagram">
+        <img class="iconFooter" src="assets/images/linkedin.png" alt="icone linkedin">
+        <img class="iconFooter" src="assets/images/logo-twitter.png" alt="icone logo-twitter">
+      </div>
+      <div>
+<p>Mentions légales</p>
+      </div>
+      <div>
+        
+      </div>
+    </section>
+  </footer>
 
-
-            </form>
-
-        </section>
-
-    </header>
-
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
